@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6lL-Bk-tBT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6lL-Bk-tBT">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,10 +16,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KrI-4t-QV3">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KrI-4t-QV3" customClass="CarouselScrollView" customModule="TestPageView" customModuleProvider="target">
                                 <rect key="frame" x="16" y="202" width="361" height="449"/>
                                 <viewLayoutGuide key="contentLayoutGuide" id="n1c-kd-TAb"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="FwH-Ac-jOH"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cellMargin">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="delegate" destination="6lL-Bk-tBT" id="chf-fM-wtj"/>
                                 </connections>
@@ -28,14 +33,14 @@
                         <viewLayoutGuide key="safeArea" id="ltT-BM-dHd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="KrI-4t-QV3" firstAttribute="leading" secondItem="ltT-BM-dHd" secondAttribute="leading" constant="16" id="9jf-is-teN"/>
-                            <constraint firstItem="KrI-4t-QV3" firstAttribute="top" secondItem="ltT-BM-dHd" secondAttribute="top" constant="143" id="WyZ-8Z-WiF"/>
-                            <constraint firstItem="ltT-BM-dHd" firstAttribute="bottom" secondItem="KrI-4t-QV3" secondAttribute="bottom" constant="167" id="awB-Mc-v4e"/>
-                            <constraint firstItem="ltT-BM-dHd" firstAttribute="trailing" secondItem="KrI-4t-QV3" secondAttribute="trailing" constant="16" id="wwu-In-TMt"/>
+                            <constraint firstItem="KrI-4t-QV3" firstAttribute="leading" secondItem="ltT-BM-dHd" secondAttribute="leading" constant="16" id="Mcp-MD-nff"/>
+                            <constraint firstItem="ltT-BM-dHd" firstAttribute="trailing" secondItem="KrI-4t-QV3" secondAttribute="trailing" constant="16" id="R1q-Kn-tLQ"/>
+                            <constraint firstItem="ltT-BM-dHd" firstAttribute="bottom" secondItem="KrI-4t-QV3" secondAttribute="bottom" constant="167" id="Z6M-DQ-KdG"/>
+                            <constraint firstItem="KrI-4t-QV3" firstAttribute="top" secondItem="ltT-BM-dHd" secondAttribute="top" constant="143" id="mUQ-AQ-xzH"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="scrollView" destination="KrI-4t-QV3" id="ZMp-9h-sag"/>
+                        <outlet property="carouselView" destination="KrI-4t-QV3" id="TlM-zU-Khq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CoG-Bw-nGj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

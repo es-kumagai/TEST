@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -50,6 +50,10 @@
 		B17DEC832C475FF800431585 /* TestPageViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPageViewUITests.swift; sourceTree = "<group>"; };
 		B17DEC852C475FF800431585 /* TestPageViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPageViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		B13B1B392CAEEC520075A811 /* CarouselScroll */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = CarouselScroll; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B17DEC5C2C475FF500431585 /* Frameworks */ = {
@@ -102,6 +106,7 @@
 				B17DEC622C475FF500431585 /* AppDelegate.swift */,
 				B17DEC642C475FF500431585 /* SceneDelegate.swift */,
 				B17DEC662C475FF500431585 /* ViewController.swift */,
+				B13B1B392CAEEC520075A811 /* CarouselScroll */,
 				B17DEC682C475FF500431585 /* Main.storyboard */,
 				B17DEC6B2C475FF700431585 /* Assets.xcassets */,
 				B17DEC6D2C475FF700431585 /* LaunchScreen.storyboard */,
@@ -141,6 +146,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B13B1B392CAEEC520075A811 /* CarouselScroll */,
 			);
 			name = TestPageView;
 			productName = TestPageView;
